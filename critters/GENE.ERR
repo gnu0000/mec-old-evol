@@ -1,0 +1,88 @@
+Microsoft (R) C/C++ Optimizing Compiler Version 8.00c    
+Copyright (c) Microsoft Corp 1984-1993. All rights reserved.
+
+gene.c
+gene.c(154) : error C2065: 'iWEIGHTBURN' : undeclared identifier
+gene.c(154) : error C2109: subscript requires array or pointer type
+gene.c(154) : error C2065: 'iACTIONBURN' : undeclared identifier
+gene.c(154) : error C2109: subscript requires array or pointer type
+gene.c(158) : error C2109: subscript requires array or pointer type
+gene.c(158) : error C2109: subscript requires array or pointer type
+gene.c(162) : error C2109: subscript requires array or pointer type
+gene.c(162) : error C2109: subscript requires array or pointer type
+gene.c(166) : error C2109: subscript requires array or pointer type
+gene.c(166) : error C2109: subscript requires array or pointer type
+gene.c(225) : error C2039: 'iMemSize' : is not a member of '_adat'
+gene.c(227) : error C2039: 'iMemSize' : is not a member of '_adat'
+gene.c(279) : error C2082: redefinition of formal parameter 'pa'
+gene.c(301) : error C2065: 'i' : undeclared identifier
+gene.c(458) : error C2065: 'j' : undeclared identifier
+gene.c(480) : error C2065: 'c' : undeclared identifier
+gene.c(513) : error C2065: 'food' : undeclared identifier
+gene.c(513) : error C2146: syntax error : missing ';' before identifier 'level'
+gene.c(513) : error C2065: 'level' : undeclared identifier
+gene.c(513) : error C2146: syntax error : missing ';' before identifier 'in'
+gene.c(513) : error C2065: 'in' : undeclared identifier
+gene.c(513) : error C2143: syntax error : missing ';' before 'constant'
+gene.c(513) : error C2146: syntax error : missing ';' before identifier 'unit'
+gene.c(514) : error C2065: 'unit' : undeclared identifier
+gene.c(514) : error C2143: syntax error : missing ';' before '}'
+gene.c(528) : error C2065: 'iORG_MEM_SIZE' : undeclared identifier
+gene.c(585) : error C2065: 'iWeight' : undeclared identifier
+gene.c(585) : error C2065: 'pszAction' : undeclared identifier
+gene.c(585) : warning C4047: 'argument' : different levels of indirection
+gene.c(585) : warning C4024: 'SplitGene' : different types for formal and actual parameter 3
+gene.c(589) : error C2065: 'psz' : undeclared identifier
+gene.c(589) : error C2065: 'szTmp' : undeclared identifier
+gene.c(589) : warning C4047: 'argument' : different levels of indirection
+gene.c(589) : warning C4024: 'AddCondition' : different types for formal and actual parameter 2
+gene.c(589) : warning C4047: '=' : different levels of indirection
+gene.c(590) : error C2065: 'pszTmp' : undeclared identifier
+gene.c(590) : warning C4047: '=' : different levels of indirection
+gene.c(592) : warning C4047: 'argument' : different levels of indirection
+gene.c(592) : warning C4024: 'strcpy' : different types for formal and actual parameter 1
+gene.c(592) : warning C4047: 'argument' : different levels of indirection
+gene.c(592) : warning C4024: 'strcpy' : different types for formal and actual parameter 2
+gene.c(596) : warning C4047: 'argument' : different levels of indirection
+gene.c(596) : warning C4024: 'strcpy' : different types for formal and actual parameter 1
+gene.c(597) : warning C4047: 'argument' : different levels of indirection
+gene.c(597) : warning C4024: 'strchr' : different types for formal and actual parameter 1
+gene.c(597) : warning C4047: '=' : different levels of indirection
+gene.c(599) : warning C4047: 'argument' : different levels of indirection
+gene.c(599) : warning C4024: 'AddRnd' : different types for formal and actual parameter 1
+gene.c(599) : warning C4047: '=' : different levels of indirection
+gene.c(600) : error C2100: illegal indirection
+gene.c(600) : error C2106: '=' : left operand must be l-value
+gene.c(601) : warning C4047: 'argument' : different levels of indirection
+gene.c(601) : warning C4024: 'strcpy' : different types for formal and actual parameter 1
+gene.c(601) : warning C4047: 'argument' : different levels of indirection
+gene.c(601) : warning C4024: 'strcpy' : different types for formal and actual parameter 2
+gene.c(605) : warning C4047: 'argument' : different levels of indirection
+gene.c(605) : warning C4024: 'strcpy' : different types for formal and actual parameter 1
+gene.c(606) : warning C4047: 'argument' : different levels of indirection
+gene.c(606) : warning C4024: 'strrchr' : different types for formal and actual parameter 1
+gene.c(606) : warning C4047: '=' : different levels of indirection
+gene.c(608) : warning C4047: 'argument' : different levels of indirection
+gene.c(608) : warning C4024: 'AddAction' : different types for formal and actual parameter 2
+gene.c(608) : warning C4047: '=' : different levels of indirection
+gene.c(609) : error C2100: illegal indirection
+gene.c(612) : warning C4047: 'argument' : different levels of indirection
+gene.c(612) : warning C4024: 'strcpy' : different types for formal and actual parameter 2
+gene.c(636) : warning C4035: 'CosmicRay_G' : no return value
+gene.c(662) : error C2371: 'NewGenes' : redefinition; different basic types
+gene.c(671) : error C2143: syntax error : missing ',' before ')'
+gene.c(677) : error C2065: 'bLook' : undeclared identifier
+gene.c(690) : error C2065: 'ppszNew' : undeclared identifier
+gene.c(690) : warning C4098: 'NewGenes' : 'void' function returning a value
+gene.c(695) : error C2143: syntax error : missing ';' before 'type'
+gene.c(698) : error C2275: 'PADAT' : illegal use of this type as an expression
+gene.c(698) : error C2146: syntax error : missing ';' before identifier 'pa'
+gene.c(704) : error C2065: 'iLoc' : undeclared identifier
+gene.c(709) : error C2039: 'iMemSize' : is not a member of '_adat'
+gene.c(711) : error C2039: 'iMemSize' : is not a member of '_adat'
+gene.c(711) : error C2198: 'Rnd' : too few actual parameters
+gene.c(717) : error C2039: 'iMemSize' : is not a member of '_adat'
+gene.c(733) : error C2065: 'piMom' : undeclared identifier
+gene.c(736) : error C2065: 'pDat' : undeclared identifier
+gene.c(736) : error C2223: left of '->piMem' must point to class/struct/union
+gene.c(737) : warning C4013: 'CosmicRay_M' undefined; assuming extern returning int

@@ -1,0 +1,66 @@
+DEBUG = TRUE
+
+PROG = e
+
+all : $(PROG).exe
+
+!IF "$(DEVELOP)" == "MSC8"
+############################################################################
+
+!IF "$(DEBUG)" == "MEM"
+COPT = /c /W3 /AL /Od /Zip /nologo /DEBS_DEBUG /DMEM_DEBUG
+LOPT = /CO/NOLOGO/NOE/St:18000
+LIBS = Gnu16d
+EXCP = rem
+!ELSE IF "$(DEBUG)" == "TRUE"
+COPT = /c /W3 /AL /Od /Zip /nologo
+LOPT = /CO/NOLOGO/NOE/St:18000
+LIBS = Gnu16d
+EXCP = rem
+!ELSE
+COPT = /c /W3 /AL /Ox /Grs /Zp /nologo
+LOPT = /E/F/PACKC/NOLOGO/NOE/St:18000
+LIBS = Gnu16o
+EXCP = pklite -p
+!ENDIF
+
+$(PROG).obj : $(PROG).c
+  cl $(COPT) $*.c
+
+$(PROG).exe : $(PROG).obj
+  link $* $(LOPT),,NUL,$(LIBS);
+  $(EXCP) $(@B).EXE
+
+############################################################################
+!ELSE
+############################################################################
+
+!IF "$(DEBUG)" == "TRUE"
+COPT = -mf -bt=dos -fp5 -5s -s -w3 -ze -od -d2 -5r -zp4 -zq
+LOPT = debug all
+LIBS = gnu32d.lib
+!ELSE
+COPT = -mf -bt=dos -fp5 -5s -s -w3 -ze -omaxnet -5r -zp4 -zq
+LOPT = 
+LIBS = gnu32o.lib
+!ENDIF
+
+$(PROG).obj : $(PROG).c
+  wcc386 $(COPT) $*.c
+
+$(PROG).exe : $(PROG).obj
+	wlink @<<$(@B).lnk
+system   dos4g
+option   stub=wstubq.exe
+option   stack=40000
+$(LOPT)
+name     $(PROG)
+library  $(LIBS)
+file     $(PROG)
+<<nokeep
+
+############################################################################
+!ENDIF
+
+
+
